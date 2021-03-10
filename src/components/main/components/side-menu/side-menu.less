@@ -1,0 +1,75 @@
+.side-menu-wrapper {
+  user-select: none;
+  .menu-collapsed {
+    padding-top: 10px;
+
+    .ivu-dropdown {
+      width: 100%;
+      .ivu-dropdown-rel a {
+        width: 100%;
+      }
+    }
+    .ivu-tooltip {
+      width: 100%;
+      .ivu-tooltip-rel {
+        width: 100%;
+      }
+      .ivu-tooltip-popper .ivu-tooltip-content {
+        .ivu-tooltip-arrow {
+          border-right-color: #fff;
+        }
+        .ivu-tooltip-inner {
+          background: #fff;
+          color: #495060;
+        }
+      }
+    }
+
+  }
+  a.drop-menu-a {
+    display: inline-block;
+    padding: 6px 15px;
+    width: 100%;
+    text-align: center;
+    color: #495060;
+  }
+}
+
+.menu-title {
+  padding-left: 6px;
+}
+
+@prefix: ~"side-menu";
+@drag-drawer-trigger-height: 100px;
+@drag-drawer-trigger-width: 8px;
+.@{prefix}-trigger-wrapper {
+  top: 0;
+  height: 100%;
+  width: 0;
+  .@{prefix}-move-trigger {
+    position: absolute;
+    top: 50%;
+    height: @drag-drawer-trigger-height;
+    width: @drag-drawer-trigger-width;
+    background: rgb(243, 243, 243);
+    transform: translate(-50%, -50%);
+    border-radius: ~"4px / 6px";
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .2);
+    line-height: @drag-drawer-trigger-height;
+    cursor: col-resize;
+    &-point {
+      display: inline-block;
+      width: 50%;
+      transform: translateX(50%);
+      i {
+        display: block;
+        border-bottom: 1px solid rgb(192, 192, 192);
+        padding-bottom: 2px;
+      }
+    }
+  }
+}
+
+.ivu-col {
+  transition: .4s;
+}

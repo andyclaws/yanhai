@@ -1,0 +1,47 @@
+{
+  "treedata": [
+    {
+      "index": 1,
+      "name": "海水淡化厂"
+    },
+    {
+      "index": 2,
+      "name": "大用户"
+    },
+    {
+      "index": 3,
+      "name": "居民用户"
+    }
+  ],
+  "userData": [
+    {
+      "sd_tongbi": "--",
+      "sd_huanbi": "70%",
+      "sd_zongliang": 30000,
+      "gf_tongbi": "--",
+      "gf_huanbi": "15%",
+      "gf_zongliang": 6426,
+      "cn_tongbi": "--",
+      "cn_huanbi": "5%",
+      "cn_zongliang": 2142,
+      "fd_tongbi": "--",
+      "fd_huanbi": "10%",
+      "fd_zongliang": 4284
+    },
+    {
+      "sd_tongbi": "--",
+      "sd_huanbi": "70%",
+      "sd_zongliang": 30000,
+      "gf_tongbi": "--",
+      "gf_huanbi": "5%",
+      "gf_zongliang": 2142,
+      "cn_tongbi": "--",
+      "cn_huanbi": "15%",
+      "cn_zongliang": 6426,
+      "fd_tongbi": "--",
+      "fd_huanbi": "10%",
+      "fd_zongliang": 4284
+    },
+    {}
+  ]
+}

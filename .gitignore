@@ -1,0 +1,7 @@
+
+/package-lock.json
+.idea/
+dist/
+/yhdydh
+node_modules/
+/_test/*

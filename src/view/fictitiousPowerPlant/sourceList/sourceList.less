@@ -1,0 +1,292 @@
+.sourceList {
+  position: relative;
+  padding: 0 5px 0 5px;
+}
+
+.sourceList {
+  .ivu-back-top.ivu-back-top-show {
+    right: 95px !important;
+  }
+
+  .ivu-card-body {
+    padding: 0px;
+  }
+
+  .ivu-form .ivu-form-item-label {
+    font-size: 14PX;
+    font-weight: 400;
+  }
+
+  .ivu-form .ivu-form-item {
+    margin-bottom: 5px;
+  }
+
+  .btnControl {
+    position: fixed;
+    z-index: 99;
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    line-height: 60px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    right: 25px;
+    top: 46%;
+    transition: 0.3s;
+  }
+
+  .btnControl:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+
+  }
+
+  .btnControl .iconControl {
+    color: white;
+    margin-left: 10px;
+    margin-top: -6px;
+  }
+
+  .btnControl .iconControl.show {
+    transform: rotate(180deg);
+    margin-left: 12px;
+  }
+
+  .button-group {
+    position: fixed;
+    top: 63%;
+    transform: translateY(-18%);
+    right: 25px;
+    width: 55px;
+    z-index: 100;
+  }
+
+  .button-group button {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    height: 55px;
+    line-height: 15px;
+    white-space: normal;
+    word-break: break-all;
+    vertical-align: middle;
+    border-radius: 4px;
+    margin-bottom: 2px;
+  }
+
+  .button-group button span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .button-group button:hover {
+    background-color: #009999;
+  }
+
+  .button-group-checked {
+    background-color: #009999 !important;
+  }
+
+  .searchBar {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 170px;
+    line-height: 100px;
+    z-index: 99;
+    display: -ms-flexbox;
+    display: inline-block;
+    background-color: #fcfcfc;
+    box-sizing: border-box;
+    border: 1px solid #e8eaec;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+
+  .medicalGroupArea {
+    position: relative;
+    display: inline-block;
+    height: calc(~"100% - 250px");
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdee2;
+  }
+
+  .medicalGroupArea::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  .medicalGroupArea::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+  }
+
+  /* 滚动条的内层滑轨背景颜色 */
+
+  .medicalGroupArear::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+
+  /* 滚动条的外层滑轨背景颜色 */
+
+  .medicalGroupArea::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+  }
+
+  /* 滚动条的内层滑块颜色 */
+
+  .medicalGroupArea::-webkit-scrollbar-button {
+    background-color: #fff;
+    display: none;
+  }
+
+  .medicalGroupArea .medicalGroupInfo {
+    background-color: #fcfcfc;
+  }
+
+  .medicalGroupArea .infoHeader {
+    background: linear-gradient(180deg,
+        rgba(252, 252, 252, 1) 0%,
+        rgba(252, 252, 252, 1) 0%,
+        rgba(246, 246, 246, 1) 100%,
+        rgba(246, 246, 246, 1) 100%);
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .medicalGroupArea .infoHeader span {
+    font-weight: 650;
+    font-size: 16px;
+    color: #009999;
+    margin-left: 10px;
+  }
+
+  .medicalGroupArea .infoHeader .goToIcon {
+    display: inline-block;
+    height: 50px;
+    width: 30px;
+    line-height: 50px;
+    position: absolute;
+    right: 0px;
+    padding-top: 2px;
+    cursor: pointer;
+  }
+
+  .medicalGroupArea .infoHeader .goToIcon img {
+    transform: rotate(45deg);
+  }
+
+  .medicalGroupArea .infoMain {
+    background-color: rgba(252, 252, 252, 1);
+  }
+
+  .medicalGroupArea .infoImage {
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    width: 96%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgba(226, 226, 226, 1);
+    border-radius: 4px;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+
+  .medicalGroupArea .infoTitle {
+    display: inline-block;
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    top: -12px;
+    left: 10px;
+    font-weight: 650;
+    color: #009999;
+    font-size: 14px;
+    background-color: #fcfcfc;
+  }
+
+  .medicalGroupArea .infoBody {
+    border-radius: 4px;
+    padding: 0 2% 0 2%;
+    position: relative;
+  }
+
+  .medicalGroupArea .infoBody .baseInfo,
+  .medicalGroupArea .infoBody .runTimeInfo,
+  .medicalGroupArea .infoBody .statisInfo {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    padding: 15px 10px 0 10px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+
+  .medicalGroupArea .infoBody .medicalName {
+    display: inline-block;
+    position: absolute;
+    font-weight: 650;
+    color: #009999;
+    background-color: rgba(252, 252, 252, 1);
+    font-size: 15px;
+    line-height: 15px;
+    top: -7px;
+    left: 10px;
+  }
+
+  .medicalGroupArea .infoBody .onlineStatus,
+  .medicalGroupArea .infoBody .infoItem,
+  .medicalGroupArea .infoBody .infoValue {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .medicalGroupArea .infoBody .onlineStatus {
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(252, 252, 252, 1);
+    top: -7px;
+    right: 20px;
+    line-height: 15px;
+  }
+
+  .medicalGroupArea .infoBody .onlineStatus span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .medicalGroupArea .infoBody .onlineStatus .isOnline {
+    color: #009999;
+  }
+
+  .medicalGroupArea .infoBody .onlineStatus .isUnkonwn {
+    color: #FF9933;
+  }
+
+  .medicalGroupArea .infoBody .onlineStatus .isOutline {
+    color: #D68381;
+  }
+
+  .medicalGroupArea .infoBody .infoItem {
+    margin-right: 5px;
+  }
+
+  .medicalGroupArea .infoBody .marginControl {
+    line-height: 20px;
+    margin: 5px 0px 10px 5px;
+  }
+
+  .medicalGroupArea .infoBody .infoValue {
+    color: #009999;
+    word-break: break-all;
+  }
+}

@@ -1,0 +1,191 @@
+.lightDetail-contanier {
+  .ivu-card-head {
+    display: flex;
+    background: linear-gradient(180deg, rgba(252, 252, 252, 1) 0%, rgba(252, 252, 252, 1) 0%, rgba(246, 246, 246, 1) 100%, rgba(246, 246, 246, 1) 100%);
+    div {
+      width: auto;
+      display: flex;
+      div:first-child {
+        img {
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+      }
+      div:last-child {
+        span {
+          color: #009999;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .content-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .left-box {
+      width: 30%;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      >div {
+        height: 32%;
+        border: 1px solid #e2e2e2;
+        position: relative;
+        border-radius: 4px;
+        .power-charts {
+          width: 100%;
+          height: 80%;
+        }
+        .title {
+          position: absolute;
+          top: 10px;
+          left: 10PX;
+          color: #009999;
+          font-size: 14px;
+        }
+        .currentPower, .maxDesignPower {
+          text-align: center;
+          position: absolute;
+          p {
+            font-size: 13px;
+          }
+          p:last-child {
+            color: #009999;
+          }
+        }
+        .currentPower {
+          left: 12%;
+        }
+        .maxDesignPower {
+          left: 62%;
+        }
+      }
+      .run-data-box {
+        display: flex;
+        justify-content: space-between;
+        >p {
+          position: absolute;
+          top: -10px;
+          left: 17px;
+          background: #ffffff;
+          color: #009999;
+          font-size: 14px;
+        }
+        >div {
+          width: 50%;
+          height: 100%;
+          padding-left: 15px;
+          p {
+            margin-top: 20px;
+            font-size: 13px;
+            span {
+              font-size: 13px;
+              color: #009999;
+            }
+          }
+        }
+      }
+    }
+    .right-box {
+      width: 69%;
+      >div {
+        height: 49%;
+        // border: 1px solid #e2e2e2;
+        border-radius: 4px;
+      }
+      >div:last-child {
+        margin-top: 2%;
+      }
+      .curve-box {
+        .header {
+          line-height: 35px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 10px;
+          margin-top: 5px;
+          div:first-child, div:last-child p{
+            color: #009999;
+            font-size: 14px;
+          }
+          div:last-child {
+            display: flex;
+            p {
+              width: 80px;
+              height: 27px;
+              text-align: center;
+              line-height: 27px;
+              border: 1px solid #e2e2e2;
+              font-size: 13px;
+              &.bg-color {
+                background: #009999;
+                color: #ffffff;
+              }
+            }
+            p:hover {
+              cursor: pointer;
+            }
+            p:first-child {
+              border-top-left-radius: 4px;
+              border-bottom-left-radius: 4px;
+            }
+            p:nth-of-type(2) {
+              border-right: none;
+              border-left: none;
+            }
+            p:last-child {
+              border-top-right-radius: 4px;
+              border-bottom-right-radius: 4px;
+            }
+          }
+        }
+        .power-charts-box {
+          width: 100%;
+          height: 88%;
+          .chart {
+            width: 100%;
+            height: 90%;
+            margin-top: 2%;
+          }
+        }
+        .search {
+          width: 100%;
+          line-height: 30px;
+          padding: 0px 12px;
+          span {
+            font-size: 10px;
+          }
+          .ivu-radio-group {
+            line-height: 10px;
+            margin-left: 5px;
+          }
+          .search-btn {
+            width: 70px;
+            line-height: 25px;
+            background: #009999;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 4px;
+          }
+        }
+        .electric-charts-box {
+          width: 100%;
+          height: 80%;
+          .electricity-chart {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .el-table .warning-row {
+    background: #ffffff;
+  }
+
+  .el-table .success-row {
+    background: #B0C4DE;
+  }
+}

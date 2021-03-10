@@ -1,0 +1,218 @@
+.syntheticalAnalysis .buttonBox{
+  position: fixed;
+  right: 3%;
+  top: 40%;
+  z-index: 99;
+}
+.syntheticalAnalysis .buttonBoxDiv{
+  width: 60px;
+  height: 60px;
+  background:inherit;
+  border:none;
+  border-radius:4px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-size:16px;
+  color: #ffffff;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.syntheticalAnalysis .buttonBoxDivFilter{
+  background-color:rgba(0, 0, 0, 0.4);
+}
+.syntheticalAnalysis .buttonBoxDivFilter:hover{
+  background-color:rgba(0, 0, 0, 0.6);
+}
+.syntheticalAnalysis .buttonBoxDivFilter.selected{
+  background-color: rgba(0, 153, 153, 1);
+}
+.syntheticalAnalysis .buttonBoxImgMenuBackground{
+  background-image: url("../../images/u48800.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.syntheticalAnalysis .buttonBoxImgSearch {
+  transform: rotate(-45deg);
+}
+.syntheticalAnalysis .searchBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  background: inherit;
+  background-color: rgba(252, 252, 252, 1);
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(232, 234, 236, 1);
+  border-radius: 4px;
+  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.156862745098039);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.156862745098039);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.156862745098039);
+}
+.syntheticalAnalysis .searchBar .ivu-card-body {
+  height: 100px;
+  line-height: 100px;
+}
+.syntheticalAnalysis .menu-bottom {
+  position: relative;
+}
+.syntheticalAnalysis .menu-bottom .linkBox {
+  height: 150px;
+  width: 180px;
+  background: url("../../images/u41486.png") no-repeat;
+  position: absolute;
+  bottom: 0px;
+  right: 60px;
+  padding: 0px 10px;
+}
+.syntheticalAnalysis .linkBox div{
+  height: 42px;
+  line-height: 42px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.syntheticalAnalysis .linkBox div.selected, .syntheticalAnalysis .linkBox div:hover{
+  background: url(../../images/bg_mover.png) no-repeat;
+  background-size: 100% 100%;
+}
+.syntheticalAnalysis .linkBox .comprehensive div, .syntheticalAnalysis .linkBox .org_Management div , .syntheticalAnalysis .linkBox .manager_Appraise div{
+  width: 28px;
+  height: 28px;
+  background-color: rgba(4, 223, 213, 1);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin: 0 15px 0 10px;
+}
+.syntheticalAnalysis .linkBox .comprehensive{
+  border-bottom: 1px solid rgba(4, 223, 213, 1);
+  margin: 5px 0 5px 0;
+}
+.syntheticalAnalysis .linkBox .org_Management{
+  border-bottom: 1px solid rgba(4, 223, 213, 1);
+  margin: 5px 0 5px 0;
+}
+.syntheticalAnalysis .linkBox .manager_Appraise{
+  border-bottom: 1px solid rgba(4, 223, 213, 1);
+  margin: 5px 0 5px 0;
+}
+
+//弹窗
+.ivu-modal-header{
+  background-color: rgba(0, 153, 153, 1) !important;
+}
+.ivu-modal-body{
+  background-color: rgba(242, 242, 242, 1);
+}
+.ivu-modal-header p, .ivu-modal-header-inner, .ivu-modal-close .ivu-icon-ios-close{
+  color: #fff;
+  font-size: 16px;
+}
+//.syntheticalAnalysis .ivu-card-body{
+//  padding: 0;
+//}
+.ivu-table td, .ivu-table th{
+  text-align: center;
+}
+.ivu-table-wrapper th, .ivu-table-wrapper td{
+  text-align: center;
+}
+
+//quota
+.quota .title{
+  color:  #448c86;
+  font-size: 20px;
+  font-weight:bold;
+  height:24px;
+}
+.quota .ivu-input-wrapper{
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.quota .ivu-card .ivu-card-bordered {
+  margin-top: 2%;
+}
+.quota .total{
+  color:  #448c86;
+  font-size: 10px;
+  font-weight:bold;
+}
+//effect
+.effect .title{
+  color:  #448c86;
+  font-size: 20px;
+  font-weight:bold;
+  height:24px;
+}
+.effect .ivu-input-wrapper{
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.effect .total{
+  color:  #448c86;
+  font-size: 10px;
+  font-weight:bold;
+}
+.effect .ivu-card .ivu-card-bordered {
+  margin-top: 2%;
+}
+.effect .manageControlUnit .ivu-col-span-2
+{
+  margin-top: 2%;
+}
+.effect .manageControlUnitBottom .ivu-row{
+  margin-bottom: 3px;
+}
+.quota .quotaP {
+  line-height: 26px
+}
+.effect .effectP {
+  line-height: 29px
+}
+
+//顶部搜索栏
+.searchBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  background: inherit;
+  background-color: rgba(252, 252, 252, 1);
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(232, 234, 236, 1);
+  border-radius: 4px;
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.156862745098039);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.156862745098039);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.156862745098039);
+  transition: .3s;
+  overflow: hidden;
+}
+
+.searchBar .ivu-card-body {
+  height: 100px;
+  line-height: 100px;
+}
+
+.sea-search-box {
+  margin-right: 80px;
+}

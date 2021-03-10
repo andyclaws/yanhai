@@ -1,0 +1,347 @@
+.tdec-header {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  box-sizing: border-box;
+  box-shadow: none;
+  background: linear-gradient(rgb(252, 252, 252) 0%, rgb(252, 252, 252) 0%, rgb(246, 246, 246) 100%, rgb(246, 246, 246) 100%);
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  p:first-child {
+    img {
+      vertical-align: middle;
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+  }
+  p:last-child {
+    padding-top: 1px;
+    span {
+      color: #009999;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
+.tdec-table-header {
+  margin-top: 20px;
+  >div {
+    width: 50%;
+    height: 44px;
+  }
+  >div:first-child {
+    display: flex;
+  }
+  >div:last-child {
+    padding-right: 25px;
+    .add-declaration {
+      width: 120px;
+      height: 40px;
+      display: flex;
+      float: right;
+    }
+    .add-declaration:hover {
+      cursor: pointer;
+    }
+  }
+}
+.tdec-search-box {
+  width: 100%;
+  height: auto;
+  line-height: 60px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  .ivu-form {
+    margin-top: 10px;
+    margin-left: -25px;
+  }
+  .ivu-form .ivu-form-item-label {
+    font-size: 12px;
+  }
+  .primary-btn {
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #009999;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 5px;
+  }
+  .primary-btn:hover {
+    cursor: pointer;
+  }
+}
+.tdec-table-box {
+  width: 100%;
+  height: 500px;
+  border-radius: 4px;
+  .ivu-table-header {
+    color: #009999;
+    font-weight: bold;
+  }
+}
+.transaction-price-modal .ivu-modal-body {
+  background: #f2f2f2;
+}
+.m-title {
+  width: 100%;
+  font-size: 16px;
+  span {
+    font-size: 16px;
+    color: #009999;
+  }
+}
+.m-table {
+  .ivu-table-wrapper {
+    margin-top: 20px;
+  }
+  .ivu-table .declaration-price-table-info-cell td{
+    color: #009999;
+  }
+}
+.add-declaration-body {
+  width: 100%;
+  height: auto;
+  .add-info-title {
+    width: 100%;
+    height: 40px;
+    color: #009999;
+    font-size: 16px;
+    padding-left: 20px;
+    line-height: 40px;
+  }
+  .add-declaration-top {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    .transaction-notice-box {
+      width: 49%;
+      height: auto;
+      border: 1px solid #e2e2e2;
+      border-radius: 4px;
+      .transaction-notice-content {
+        width: 100%;
+        height: 257px;
+        padding: 0 20px;
+        .notice-select,.notice-date {
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+        }
+        .notice-select, .notice-date {
+          span {
+            display: inline-block;
+            font-size: 12px;
+            margin-right: 20px;
+          }
+        }
+        .notice-date {
+          font-size: 12px;
+          margin-top: 2px;
+        }
+        .notice-table {
+          .ivu-table .declaration-price-table-info-cell td{
+            color: #009999;
+          }
+        }
+      }
+    }
+    .quote-reference-box {
+      width: 49%;
+      height: auto;
+      border: 1px solid #e2e2e2;
+      border-radius: 4px;
+      .input-top {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        .label {
+          font-size: 12px;
+        }
+      }
+      .quote-charts-box {
+        width: 100%;
+        height: 255px;
+        >.quote-chart {
+          width: 100%;
+          height: 225px;
+        }
+        .xAxis-name {
+          width: 80px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          font-size: 12px;
+          margin: 0 auto;
+        }
+      }
+      .button {
+        width: 75px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        background: #009999;
+        float: right;
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 12px;
+      }
+      .button:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .add-declaration-bottom {
+    height: 46%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    .quote-info-box {
+      width: 100%;
+      height: auto;
+      border: 1px solid #e2e2e2;
+      border-radius: 4px;
+      padding: 0 20px;
+      .quote-header {
+        width: 100%;
+        display: flex;
+        .quote-title {
+          width: 50%;
+          padding: 0;
+        }
+      }
+      .quote-table {
+        .ivu-table .declaration-price-table-info-cell td{
+          color: #009999;
+        }
+        .ivu-table td.table-info-Energy{
+          color: red;
+        }
+      }
+      .quote-btn {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        >div {
+          width: 90px;
+          height: 33px;
+          border-radius: 4px;
+          text-align: center;
+          line-height: 33px;
+          font-size: 14px;
+        }
+        >div:hover {
+          cursor: pointer;
+        }
+        div:first-child {
+          background: #009999;
+          color: #ffffff;
+          margin-right: 20px;
+
+        }
+        div:last-child {
+          background: #f2f2f2;
+
+        }
+      }
+    }
+  }
+}
+.confirm-declaration-body {
+  width: 100%;
+  height: 285px;
+  .confirm-top {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    p {
+      width: 50%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 14px;
+      span {
+        color: #009999;
+        font-size: 14px;
+      }
+    }
+    p:first-child {
+      text-align: left;
+    }
+    p:last-child {
+      text-align: right;
+    }
+  }
+  .confirm-table {
+    .ivu-table .declaration-price-table-info-cell td{
+      color: #009999;
+    }
+  }
+  .confirm-btn {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    >div {
+      width: 90px;
+      height: 33px;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 33px;
+      font-size: 14px;
+    }
+    >div:hover {
+      cursor: pointer;
+    }
+    div:first-child {
+      background: #009999;
+      color: #ffffff;
+      margin-right: 20px;
+
+    }
+    div:last-child {
+      background: #f2f2f2;
+
+    }
+  }
+}
+.add-quote-form-body {
+  .quote-button-box .ivu-form-item-content {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+    >div {
+      width: 120px;
+      height: 35px;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 35px;
+      font-size: 18px;
+    }
+    >div {
+      cursor: pointer;
+    }
+    div:first-child {
+      background: #009999;
+      color: #ffffff;
+      margin-right: 30px;
+      margin-left: -30px;
+    }
+    div:last-child {
+      background: #f2f2f2;
+    }
+  }
+}
+

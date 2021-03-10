@@ -1,0 +1,466 @@
+.archiveManage-body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .left-tree {
+    .ivu-card {
+      width: 250px;
+      height: 800px;
+      .ivu-card-head {
+        height: 44px;
+        background: linear-gradient(180deg, rgba(252, 252, 252, 1) 0%, rgba(252, 252, 252, 1) 0%, rgba(246, 246, 246, 1) 100%, rgba(246, 246, 246, 1) 100%);
+        div {
+          width: auto;
+          display: flex;
+          div:first-child {
+            img {
+              vertical-align: middle;
+              margin-right: 5px;
+            }
+          }
+          div:last-child {
+            span {
+              color: #009999;
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .input-box {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 15px;
+        position: relative;
+        .ivu-icon {
+          color: #009999;
+          font-size: 25px;
+          position: absolute;
+          top: 6px;
+          left: 185px;
+          z-index: 96;
+          font-weight: 600;
+        }
+      }
+      .tree-box {
+        width: 100%;
+        max-height: 600px;
+        overflow: auto;
+        margin-bottom: 20px;
+      }
+      .add-btn {
+        width: 75px;
+        height: 25px;
+        border-radius: 4px;
+        background: #009999;
+        color: #ffffff;
+        font-size: 14px;
+        text-align: center;
+        line-height: 25px;
+        margin: 0 auto;
+      }
+      .add-btn:hover {
+        cursor: pointer;
+      }
+    }
+    &.show-tree {
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 0;
+      animation: bounceInLeft 1s;
+      z-index: 99;
+    }
+    &.hide-tree {
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 0;
+      animation: bounceOutLeft 1s;
+      transform: translate(-105%, 0);
+      z-index: 99;
+    }
+  }
+
+  @keyframes bounceInLeft {
+    from {
+      transform: translate(-105%, 0);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
+  @keyframes bounceOutLeft {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(-105%, 0);
+    }
+  }
+  .show-tree-btn, hide-tree-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 265px;
+    left: 0px;
+    z-index: 100;
+    cursor: pointer;
+    .ivu-icon {
+      color: #009999;
+      font-size: 27px;
+    }
+  }
+  .info-body {
+    width: 100%;
+    .header {
+      display: flex;
+      width: 100%;
+      height: 44px;
+      line-height: 44px;
+      box-sizing: border-box;
+      box-shadow: none;
+      background: linear-gradient(rgb(252, 252, 252) 0%, rgb(252, 252, 252) 0%, rgb(246, 246, 246) 100%, rgb(246, 246, 246) 100%);
+      border: 1px solid #e2e2e2;
+      border-radius: 4px;
+      p:first-child {
+        img {
+          vertical-align: middle;
+          margin-left: 10px;
+          margin-right: 5px;
+        }
+      }
+      p:last-child {
+        span {
+          color: #009999;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+    .base-info {
+      width: 100%;
+      height: auto;
+      display: flex;
+      border: 1px solid #e2e2e2;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0);
+      box-sizing: border-box;
+      position: relative;
+      >div:first-child {
+        width: auto;
+        height: 22px;
+        background: #f5f7f9;
+        font-size: 14px;
+        color: #009999;
+        position: absolute;
+        top: -10px;
+        left: 13px;
+        font-weight: 600;
+      }
+      .left-info {
+        width: 85%;
+        height: auto;
+        padding: 20px 13px 38px 13px;
+        >div:first-child {
+          display: flex;
+          div {
+            width: 25%;
+            p {
+              font-size: 10px;
+            }
+            p:not(:first-child) {
+              margin-top: 13px;
+            }
+            span {
+              font-size: 10px;
+              color: #009999;
+            }
+          }
+        }
+        >div:last-child {
+          position: relative;
+          div {
+            line-height: 38px;
+            font-size: 10px;
+            span {
+              font-size: 10px;
+              color: #009999;
+            }
+          }
+          div:first-child {
+            position: absolute;
+            left: 0;
+          }
+          div:nth-of-type(2) {
+            position: absolute;
+            left: 50%;
+          }
+          div:nth-of-type(3) {
+            position: absolute;
+            left: 75%;
+          }
+        }
+      }
+      .unit-info {
+        width: 80%;
+        height: auto;
+        padding: 20px 13px 20px 13px;
+        >div {
+          display: flex;
+          div {
+            width: 30%;
+            p {
+              font-size: 10px;
+            }
+            p:not(:first-child) {
+              margin-top: 13px;
+            }
+            span {
+              font-size: 10px;
+              color: #009999;
+            }
+          }
+        }
+      }
+      .device-info {
+        width: 100%!important;
+        >div {
+          div {
+            width: 33%!important;
+          }
+        }
+      }
+      .right-btn {
+        width: 15%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        div {
+          width: 80px;
+          height: 26px;
+          text-align: center;
+          line-height: 26px;
+          border-radius: 4px;
+          font-size: 12px;
+        }
+        div:hover {
+          cursor: pointer;
+        }
+        div:first-child {
+          color: #FFFFFF;
+          background-color: #009999;
+        }
+        div:last-child {
+          border: 1px solid #009999;
+          color: #009999;
+          background-color: #ffffff;
+          margin-top: 20px;
+        }
+      }
+    }
+    .right-btn {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      div {
+        width: 80px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        border-radius: 4px;
+        font-size: 12px;
+        color: #FFFFFF;
+        background-color: #009999;
+        margin: 0 auto;
+        margin-top: 15px;
+      }
+      div:hover {
+        cursor: pointer;
+      }
+    }
+    .statistical-info {
+      width: 100%;
+      height: auto;
+      border: 1px solid #e2e2e2;
+      margin-top: 20px;
+      position: relative;
+      padding: 13px;
+      .statistical-title {
+        width: auto;
+        height: 22px;
+        background: #f5f7f9;
+        font-size: 14px;
+        color: #009999;
+        position: absolute;
+        top: -10px;
+        left: 13px;
+        font-weight: 600;
+      }
+      .statistical-top {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        >div {
+          border-radius: 4px;
+        }
+        .left-box {
+          width: 47%;
+          border: 1px solid #e2e2e2;
+          .charts-title {
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            >div:first-child {
+              width: 30%;
+              text-align: left;
+              line-height: 40px;
+              font-size: 12px;
+              color: #009999;
+              margin-left: 20px;
+            }
+            >div:last-child {
+              width: 30%;
+              display: flex;
+              div {
+                width: 40%;
+                height: 26px;
+                text-align: center;
+                line-height: 26px;
+                color: #009999;
+                font-size: 12px;
+                margin-top: 8px;
+                &.bg-color {
+                  background: #009999;
+                  color: #ffffff;
+                }
+              }
+              div:hover {
+                cursor: pointer;
+              }
+              .user-btn {
+                margin-left: 3%;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                border-right: none;
+              }
+              .group-btn {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+
+              }
+            }
+          }
+          .factor-title {
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            > div {
+              width: 40%;
+              line-height: 40px;
+              font-size: 12px;
+              color: #009999;
+              padding-left: 20px;
+            }
+          }
+          .chart {
+            width: 100%;
+            height: 210px;
+          }
+          .charts-box {
+            position: relative;
+            .area-total {
+              position: absolute;
+              top: 176px;
+              left: 16%;
+              p {
+                font-size: 12px;
+              }
+              span {
+                color: #009999;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .right-box {
+          width: 52%;
+          height: 250px;
+          border: 1px solid #e2e2e2;
+          .right-chart-title {
+            height: 30px;
+            line-height: 40px;
+            padding-left: 20px;
+            > div {
+              color: #009999;
+              font-size: 12px;
+            }
+          }
+          .chart {
+            width:100%;
+            height: 208px;
+          }
+        }
+      }
+      .statistical-bottom {
+        width: 100%;
+        height: 250px;
+        margin-top: 15px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        >div {
+          height: 250px;
+          border: 1px solid #e2e2e2;
+          border-radius: 4px;
+        }
+        >div:first-child, >div:last-child {
+          width: 47%;
+          .bottom-chart-title {
+            height: 30px;
+            line-height: 30px;
+            padding-left: 20px;
+            > div {
+              color: #009999;
+              font-size: 12px;
+            }
+          }
+        }
+        >div:last-child {
+          width: 52%;
+        }
+        .chart {
+          width:100%;
+          height: 250px;
+        }
+      }
+      .choose-user {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 15px;
+        border: 1px solid #e2e2e2;
+        border-radius: 4px;
+        .bottom-chart-title {
+          height: 30px;
+          line-height: 30px;
+          padding-left: 20px;
+          > div {
+            color: #009999;
+            font-size: 14px;
+          }
+        }
+        .chart {
+          width:100%;
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+

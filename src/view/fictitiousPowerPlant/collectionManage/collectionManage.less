@@ -1,0 +1,462 @@
+.collection-contanier {
+  width: 100%;
+  height: 100%;
+  .header {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    line-height: 44px;
+    box-sizing: border-box;
+    box-shadow: none;
+    background: linear-gradient(rgb(252, 252, 252) 0%, rgb(252, 252, 252) 0%, rgb(246, 246, 246) 100%, rgb(246, 246, 246) 100%);
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    p:first-child {
+      img {
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+    }
+
+    p:last-child {
+      span {
+        display: inline-block;
+        height: 42px;
+        line-height: 42px;
+        color: #009999;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      span:nth-of-type(2) {
+        margin-left: 12px;
+        margin-right: 12px;
+      }
+      span:first-child, span:last-child:hover {
+        cursor: pointer;
+      }
+      .add-border {
+        color: #009999;
+        border-bottom: 2px solid #009999;
+      }
+    }
+  }
+  .paramsBox, .callUpDataBox {
+    width: 100%;
+    height: 95%;
+    margin-top: 10px;
+    border-radius: 4px;
+    display: flex;
+    >div {
+      border: 1px solid #e2e2e2;
+      border-radius: 4px;
+    }
+  }
+  .paramsBox,.callUpDataBox {
+    .leftBox,.rightBox {
+      padding: 20px 10px 10px 10px;
+      .paramContent,.paramContent1,.paramContent2 {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #e2e2e2;
+        position: relative;
+        > p {
+          color: #009999;
+          background: #fcfcfc;
+          height: 20px;
+          font-size: 14px;
+          position: absolute;
+          left: 15px;
+          top: -12px;
+        }
+      }
+    }
+    .leftBox {
+      width: 67%;
+      .paramContent {
+        >p {
+          width: 57px;
+        }
+        .searchBox {
+          width: 100%;
+          height: 11%;
+          .ivu-form {
+            margin-top: 10px;
+            margin-left: -20px;
+          }
+          .primary-btn {
+            width: 60px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            background-color: #009999;
+            border: none;
+            border-radius: 4px;
+            box-shadow: none;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 12px;
+            color: #FFFFFF;
+            margin-top: 5px;
+          }
+          .primary-btn:hover {
+            cursor: pointer;
+          }
+        }
+        .tableBox {
+          width: 100%;
+          height: 89%;
+          .ivu-table-header {
+            color: #009999;
+            font-weight: bold;
+          }
+          .ivu-table .table-info-row td {
+            background: #d9f1e7;
+          }
+        }
+      }
+    }
+    .rightBox {
+      width: 33%;
+      .paramContent {
+        >p {
+          width: 90px;
+          text-align: center;
+        }
+        .tableBox {
+          margin-top: 17%;
+          .ivu-table-header {
+            color: #009999;
+            font-weight: bold;
+          }
+        }
+        .butn {
+          width: 100%;
+          height: 30px;
+          padding-left: 150px;
+          margin-top: 20px;
+          .lowerHair-btn, .callmeasure-btn {
+            width: 70px;
+            background: #ff9933;
+            color: #ffffff;
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 4px;
+          }
+          .lowerHair-btn, .callmeasure-btn:hover{
+            cursor: pointer;
+          }
+          .lowerHair-btn{
+            background: #ff9933;
+          }
+          .callmeasure-btn {
+            background: #009999;
+          }
+        }
+      }
+    }
+  }
+  .callUpDataBox {
+    justify-content: space-between;
+    .leftBox {
+      width: 70%;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      .paramContent1,.paramContent2 {
+        height: 48%;
+        > p {
+          width: 90px;
+          text-align: center;
+        }
+      }
+      .paramContent1 {
+        .search-div {
+          height: 30px;
+          line-height: 30px;
+          padding-left: 20px;
+          margin-top: 15px;
+          margin-bottom: 20px;
+          display: flex;
+          .button {
+            width: 90px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            color: #009999;
+            border: 1px solid #009999;
+            border-radius: 4px;
+            margin-top: 5px;
+            margin-left: 20px;
+          }
+          .button:hover {
+            cursor: pointer;
+          }
+        }
+        .top-sanjiao {
+          position: relative;
+          top:30px;
+          right:0px;
+          width:400px;
+          height:200px;
+          padding:8px;
+          background-color: #FFFFFF;
+          border: #cccccc solid 1px;
+          border-radius: 3px;
+        }
+        .searchInfo:before{
+          box-sizing: content-box;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          top: -29px;;
+          left:24px;
+          padding:0;
+          border-bottom:15px solid #FFFFFF;
+          border-top:15px solid transparent;
+          border-left:15px solid transparent;
+          border-right:15px solid transparent;
+          display: block;
+          content:'';
+          z-index: 12;
+        }
+        .searchInfo:after{
+          box-sizing: content-box;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          top: -30px;;
+          left:24px;
+          padding:0;
+          border-bottom: 15px solid #cccccc;
+          border-top: 15px solid transparent;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          display: block;
+          content:'';
+          z-index:10
+        }
+        .searchInfo {
+          position: relative;
+          width: 95%;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #e2e2e2;
+          padding: 0 50px;
+          margin: 0 auto;
+          p {
+            font-size: 12px;
+            span {
+              font-size: 12px;
+              color: #009999;
+            }
+          }
+        }
+        .calltimes {
+          width: 100%;
+          height: 40px;
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          padding-left: 20px;
+          .butn {
+            width: 70px;
+            height: 28px;
+            text-align: center;
+            line-height: 28px;
+            color: #ffffff;
+            border-radius: 4px;
+            margin-left: 40px;
+          }
+          .callup {
+            background: #ff9933;
+          }
+          .cancel {
+            background: #009999;
+          }
+        }
+      }
+      .paramContent2 {
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+        .resultLeft {
+          width: 26%;
+          border: 1px solid #e2e2e2;
+          padding-left: 20px;
+          p {
+            font-size: 12px;
+            margin-top: 20px;
+            span {
+              font-size: 12px;
+              color: #009999;
+            }
+          }
+          p:last-child {
+            color: blue;
+          }
+          p:last-child:hover {
+            cursor: pointer;
+          }
+        }
+        .resultRight {
+          width: 72%;
+          .search-box {
+            width: 100%;
+            .primary-btn {
+              width: 80px;
+              height: 24px;
+              line-height: 24px;
+              text-align: center;
+              background-color: #009999;
+              border: none;
+              border-radius: 4px;
+              box-shadow: none;
+              font-weight: 400;
+              font-style: normal;
+              font-size: 14px;
+              color: #FFFFFF;
+              margin-top: 5px;
+            }
+            .primary-btn:hover {
+              cursor: pointer;
+            }
+          }
+          .table-box {
+            .ivu-table-header {
+              color: #009999;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .rightBox {
+      width: 28%;
+      .filter-tree-box {
+        margin-top: 20px;
+        padding-left: 15px;
+      }
+      .treeBox {
+        width: 100%;
+        height: 310px;
+        overflow: auto;
+        margin-top: 10px;
+        padding-left: 10px;
+        .ivu-tree {
+          .ivu-tree-children {
+            width: 185px;
+          }
+        }
+      }
+    }
+  }
+}
+.termnalSearch-modal,.originalMessage-modal {
+  .modalConfirm-btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    > div {
+      width: 100px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      color: #ffffff;
+      background: #009999;
+      border-radius: 4px;
+      margin: 0 auto;
+    }
+    > div:hover {
+      cursor: pointer;
+    }
+  }
+}
+.termnalSearch-modal {
+  .ivu-modal-body {
+    background: #f2f2f2;
+  }
+  .modal_searchBox {
+    width: 100%;
+    height: 11%;
+    .ivu-form {
+      margin-top: 10px;
+      margin-left: -20px;
+    }
+    .primary-btn1 {
+      width: 80px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      background-color: #009999;
+      border: none;
+      border-radius: 4px;
+      box-shadow: none;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      color: #FFFFFF;
+      margin-top: 5px;
+    }
+    .primary-btn1:hover {
+      cursor: pointer;
+    }
+  }
+  .modal_tableBox {
+    width: 100%;
+    height: 89%;
+    .ivu-table-header {
+      color: #009999;
+      font-weight: bold;
+    }
+    .ivu-table .table-info-row td {
+      background: #d9f1e7;
+    }
+  }
+}
+.originalMessage-modal {
+  .info {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    display: flex;
+    justify-content: space-between;
+    p {
+      span {
+        color: #009999;
+      }
+    }
+  }
+  .timerange,.message-table {
+    margin-top: 18px;
+  }
+  .timerange {
+    display: flex;
+    justify-content: space-between;
+    >div:first-child {
+      width: 420px;
+    }
+    >div:last-child {
+      width: 90px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      background: #009999;
+      color: #ffffff;
+      border-radius: 4px;
+    }
+    >div:last-child:hover {
+      cursor: pointer;
+    }
+  }
+  .message-table {
+    margin-top: 18px;
+    .ivu-table-header {
+      color: #009999;
+      font-weight: bold;
+    }
+  }
+}
